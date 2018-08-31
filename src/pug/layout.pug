@@ -1,0 +1,28 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+    title= htmlWebpackPlugin.options.title
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(name="description" content=htmlWebpackPlugin.options.description)
+    meta(name="keywords" content=htmlWebpackPlugin.options.keywords)
+    meta(name="viewport" content="width=device-width,user-scalable=no,maximum-scale=1")
+    meta(property="og:url" content=htmlWebpackPlugin.options.url)
+    meta(property="og:image" content=htmlWebpackPlugin.options.ogp)
+    meta(property="og:type" content="website")
+    meta(property="og:title" content=htmlWebpackPlugin.options.title)
+    meta(property="og:site_name" content=htmlWebpackPlugin.options.sitename)
+    meta(property="og:description" content=htmlWebpackPlugin.options.description)
+    meta(property="og:locale" content="ja_JP")
+    meta(name="twitter:card" content="summary_large_image")
+    meta(name="twitter:site" content="@yui540")
+    meta(name="twitter:title" content=htmlWebpackPlugin.options.title)
+    meta(name="twitter:description" content=htmlWebpackPlugin.options.description)
+    meta(name="twitter:image" content=htmlWebpackPlugin.options.ogp)
+    meta(name="theme-color" content=htmlWebpackPlugin.options.theme_color)
+    link(rel="shortcut icon" content=htmlWebpackPlugin.options.favicon)
+    link(rel="apple-touch-icon" href=htmlWebpackPlugin.options.icon)
+    block style
+  body
+    block content
+    block script
