@@ -1,4 +1,10 @@
 extends layout
 
+block style
+  link(rel="stylesheet" href="./stylesheets/style.css")
+
 block content
-  h1= htmlWebpackPlugin.options.title
+  include modules/chapter-1
+
+block script
+  script(src="./scripts/app.js")
