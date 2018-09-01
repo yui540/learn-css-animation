@@ -1,0 +1,13 @@
+@keyframes chapter-1__hidden-char-1 {
+  from { transform: translate(0%, 0%); opacity: 1; }
+  to   { transform: translate(-100%, 100%); opacity: 0; }
+}
+@keyframes chapter-1__hidden-char-2 {
+  from { transform: translate(0%, 0%); opacity: 1; }
+  to   { transform: translate(100%, 100%); opacity: 0; }
+}
+
+@keyframes chapter-1__rotate-view {
+  from { transform: rotate(90deg); }
+  to   { transform: rotate(0deg); }
+}
