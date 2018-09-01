@@ -9,7 +9,7 @@
     "build:dev": "cross-env MODE=development webpack",
     "minify:css": "uglifycss public/stylesheets/style.css --output public/stylesheets/style.css",
     "watch": "cross-env MODE=development webpack --watch",
-    "serve": "webpack-dev-server"
+    "serve": "cross-env MODE=development webpack-dev-server"
   },
   "repository": {
     "type": "git",

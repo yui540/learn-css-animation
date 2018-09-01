@@ -53,11 +53,14 @@ module.exports = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin('../public/stylesheets/style.css'),
+    new ExtractTextPlugin(
+      `${__dirname}/public/stylesheets/style.css`
+    ),
     new HtmlWebpackPlugin({
       ...config,
       title: '夜空ノ贈リ物',
-      template: './src/pug/index.pug'
+      template: './src/pug/index.pug',
+      inject: false
     })
   ],
   devServer: {
