@@ -1,0 +1,43 @@
+@keyframes chapter-3__show-kako {
+  from { transform: translateY(-70vh) rotateY(0) rotateX(0); opacity: 0; }
+  to   { transform: translateY(0vh) rotateY(360deg) rotateX(360deg); opacity: 0.7; }
+}
+@keyframes chapter-3__hidden-kako {
+  from { transform: translateY(0vh) rotateY(0) rotateX(0); opacity: 0.7; }
+  to   { transform: translateY(70vh) rotateY(360deg) rotateX(360deg); opacity: 0; }
+}
+
+@keyframes chapter-3__show-mirai-1 {
+  from { transform: translateX(-70vw) rotateX(0) rotateY(0); opacity: 0; }
+  to   { transform: translateX(0vw) rotateX(360deg) rotateY(360deg); opacity: 0.7; }
+}
+@keyframes chapter-3__hidden-mirai-1 {
+  from { transform: translateX(0vw) rotateX(0) rotateY(0); opacity: 0.7; }
+  to   { transform: translateX(70vw) rotateX(360deg) rotateY(360deg); opacity: 0; }
+}
+@keyframes chapter-3__show-mirai-2 {
+  from { transform: translateX(70vw) rotateX(0) rotateY(0); opacity: 0; }
+  to   { transform: translateX(0vw) rotateX(360deg) rotateY(360deg); opacity: 0.7; }
+}
+@keyframes chapter-3__hidden-mirai-2 {
+  from { transform: translateX(0vw) rotateX(0) rotateY(0); opacity: 0.7; }
+  to   { transform: translateX(-70vw) rotateX(360deg) rotateY(360deg); opacity: 0; }
+}
+
+@keyframes chapter-3__show-saikai {
+  from { transform: scale(10) rotateX(0) rotateY(0); opacity: 0; }
+  to   { transform: scale(1) rotateX(360deg) rotateY(360deg); opacity: 0.7; }
+}
+@keyframes chapter-3__hidden-saikai {
+  from { transform: scale(1) rotateX(360deg) rotateY(360deg); opacity: 0.7; }
+  to   { transform: scale(0) rotateX(0deg) rotateY(0deg); opacity: 0; }
+}
+
+@keyframes chapter-3__change-color-1 {
+  from { background-color: #4DADAD; }
+  to   { background-color: #E1C96A; }
+}
+@keyframes chapter-3__change-color-2 {
+  from { background-color: #E1C96A; }
+  to   { background-color: #fff; }
+}
