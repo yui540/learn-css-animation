@@ -1,0 +1,103 @@
+.chapter-2 {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  overflow: hidden;
+}
+
+/*** 共通 ***/
+.chapter-2__view {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+}
+
+/**
+ * view-1
+ */
+.chapter-2__view-1 {
+  div {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    transform: translateY(calc(100% + 25.5vw));
+
+    &::after {
+      content: ""; display: block;
+      position: absolute;
+      top: -25.5vw; left: 0;
+      width: 0; height: 0;
+      border-bottom: solid 25.5vw transparent;
+      border-left: solid 50vw transparent;
+      border-right: solid 50vw transparent;
+    }
+  }
+
+  div:nth-child(1) {
+    background-color: #c3ce5f;
+    &::after { border-bottom-color: #c3ce5f; }
+  }
+  div:nth-child(2) {
+    background-color: #c45c66;
+    &::after { border-bottom-color: #c45c66; }
+  }
+  div:nth-child(3) {
+    background-color: #283c5f;
+    &::after { border-bottom-color: #283c5f; }
+  }
+}
+
+/**
+ * view-2
+ */
+.chapter-2__view-2 {
+  div {
+    position: absolute;
+    top: 0; left: -50%;
+    width: 200%; height: 200%;
+    transform: translateY(100vh);
+
+    &::after {
+      content: ""; display: block;
+      width: 100%; height: 100%;
+    }
+  }
+  div:nth-child(1)::after { background-color: #df708e; }
+  div:nth-child(2)::after { background-color: #E1C96A; }
+  div:nth-child(3)::after { background-color: #4DADAD; }
+}
+
+
+/******************************************************************
+  animation
+*******************************************************************/
+.chapter-2[data-state="active"] {
+  background-color: #283c5f;
+
+  /**
+   * view-1
+   */
+  .chapter-2__view-1 {
+    div:nth-child(1) { animation: chapter-2__show-view-1 0.7s cubic-bezier(0.97, 0.01, 0, 0.97) 0s forwards; }
+    div:nth-child(2) { animation: chapter-2__show-view-1 0.7s cubic-bezier(0.97, 0.01, 0, 0.97) 0.2s forwards; }
+    div:nth-child(3) { animation: chapter-2__show-view-1 0.7s cubic-bezier(0.97, 0.01, 0, 0.97) 0.4s forwards; }
+  }
+
+  /**
+   * view-2
+   */
+  .chapter-2__view-2 {
+    div:nth-child(1) {
+      animation: chapter-2__show-view-2 0.6s cubic-bezier(0.85, 0.01, 0.17, 1) 1.0s forwards;
+      &::after { animation: chapter-2__sway-view-2 0.6s ease-in-out 1.0s forwards; }
+    }
+    div:nth-child(2) {
+      animation: chapter-2__show-view-2 0.6s cubic-bezier(0.85, 0.01, 0.17, 1) 1.2s forwards;
+      &::after { animation: chapter-2__sway-view-2 0.6s ease-in-out 1.2s forwards; }
+    }
+    div:nth-child(3) {
+      animation: chapter-2__show-view-2 0.6s cubic-bezier(0.85, 0.01, 0.17, 1) 1.4s forwards;
+      &::after { animation: chapter-2__sway-view-2 0.6s ease-in-out 1.4s forwards; }
+    }
+  }
+}

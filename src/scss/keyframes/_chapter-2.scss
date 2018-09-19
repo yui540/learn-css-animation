@@ -1,0 +1,14 @@
+@keyframes chapter-2__show-view-1 {
+  from { transform: translateY(calc(100% + 25.5vw)); }
+  to   { transform: translateY(0); }
+}
+@keyframes chapter-2__show-view-2 {
+  from { transform: translateY(100vh); }
+  to   { transform: translateY(0vh); }
+}
+@keyframes chapter-2__sway-view-2 {
+  0%   { transform: rotate(0deg); }
+  30%  { transform: rotate(-15deg); }
+  70%  { transform: rotate(15deg); }
+  100% { transform: rotate(0deg); }
+}
