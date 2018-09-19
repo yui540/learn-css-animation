@@ -73,31 +73,4 @@
 *******************************************************************/
 .chapter-2[data-state="active"] {
   background-color: #283c5f;
-
-  /**
-   * view-1
-   */
-  .chapter-2__view-1 {
-    div:nth-child(1) { animation: chapter-2__show-view-1 0.7s cubic-bezier(0.97, 0.01, 0, 0.97) 0s forwards; }
-    div:nth-child(2) { animation: chapter-2__show-view-1 0.7s cubic-bezier(0.97, 0.01, 0, 0.97) 0.2s forwards; }
-    div:nth-child(3) { animation: chapter-2__show-view-1 0.7s cubic-bezier(0.97, 0.01, 0, 0.97) 0.4s forwards; }
-  }
-
-  /**
-   * view-2
-   */
-  .chapter-2__view-2 {
-    div:nth-child(1) {
-      animation: chapter-2__show-view-2 0.6s cubic-bezier(0.85, 0.01, 0.17, 1) 1.0s forwards;
-      &::after { animation: chapter-2__sway-view-2 0.6s ease-in-out 1.0s forwards; }
-    }
-    div:nth-child(2) {
-      animation: chapter-2__show-view-2 0.6s cubic-bezier(0.85, 0.01, 0.17, 1) 1.2s forwards;
-      &::after { animation: chapter-2__sway-view-2 0.6s ease-in-out 1.2s forwards; }
-    }
-    div:nth-child(3) {
-      animation: chapter-2__show-view-2 0.6s cubic-bezier(0.85, 0.01, 0.17, 1) 1.4s forwards;
-      &::after { animation: chapter-2__sway-view-2 0.6s ease-in-out 1.4s forwards; }
-    }
-  }
 }
