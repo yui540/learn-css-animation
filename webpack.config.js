@@ -54,7 +54,7 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin(
-      `${__dirname}/public/stylesheets/style.css`
+      `./stylesheets/style.css`
     ),
     new HtmlWebpackPlugin({
       ...config,
