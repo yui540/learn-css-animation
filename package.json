@@ -1,7 +1,7 @@
 {
-  "name": "sky-night-gift",
+  "name": "learn-css-animation",
   "version": "0.0.0",
-  "description": "『臆病な魔女は、たくさんの方々に感謝の気持ちを。』",
+  "description": "「夜空ノ贈リ物」で解説する完成品",
   "main": "webpack.config.js",
   "scripts": {
     "build": "npm-run-all -s build:prod minify:css",
@@ -22,9 +22,9 @@
   "author": "yui540 <tabletennis540@gmail.com> (https://yui540.graphics)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yui540/sky-night-gift/issues"
+    "url": "https://github.com/yui540/learn-css-animation/issues"
   },
-  "homepage": "https://github.com/yui540/sky-night-gift#readme",
+  "homepage": "https://github.com/yui540/learn-css-animation#readme",
   "devDependencies": {
     "babel-core": "6.26.3",
     "babel-loader": "7.1.5",
